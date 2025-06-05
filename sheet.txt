@@ -1,0 +1,76 @@
+=== PYTHON TO C++ CONVERSION CHEAT SHEET ===
+
+--- I/O ---
+Python:     x = int(input())
+C++:        int x; cin >> x;
+
+Python:     print(x)
+C++:        cout << x << endl;
+
+--- VARIABLES ---
+Python:     a = 10
+C++:        int a = 10;
+
+Python:     s = "hi"
+C++:        string s = "hi";
+
+--- LOOPS ---
+Python:     for i in range(n):
+C++:        for (int i = 0; i < n; i++) {
+
+Python:     while x < 10:
+C++:        while (x < 10) {
+
+--- LIST / VECTOR ---
+Python:     arr = []
+C++:        vector<int> arr;
+
+Python:     arr.append(5)
+C++:        arr.push_back(5);
+
+Python:     arr.sort()
+C++:        sort(arr.begin(), arr.end());
+
+--- FUNCTIONS ---
+Python:
+def add(a, b):
+    return a + b
+
+C++:
+int add(int a, int b) {
+    return a + b;
+}
+
+--- STRINGS ---
+Python:     len(s)
+C++:        s.length()
+
+Python:     s[0]
+C++:        s[0]
+
+Python:     s + t
+C++:        s + t
+
+--- IF / ELSE ---
+Python:     if x > 0:
+C++:        if (x > 0) {
+
+Python:     elif
+C++:        else if
+
+--- COMMON STL ---
+vector<int> v;
+map<int, int> mp;
+set<int> st;
+pair<int, int> p = {a, b};
+
+--- FAST I/O (Optional) ---
+ios::sync_with_stdio(false);
+cin.tie(0);
+
+--- EDGE CASES ---
+- Use long long for big numbers: long long x = 1e18;
+- Watch out for 0-based vs. 1-based indexing
+- Watch division and rounding
+
+=== END ===
